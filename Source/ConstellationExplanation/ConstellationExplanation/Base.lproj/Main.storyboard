@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7ye-Mh-q5t">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="constellation.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="KXJ-Dn-n2r">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJA-4I-qM8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="bear.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="31" y="202" width="114" height="86"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="fRW-Z3-JOc" kind="show" id="NCW-tK-eY0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YW-fE-SHB">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="eagle.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="220" y="202" width="135" height="102"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="bgo-kB-wRj" kind="show" id="uUk-96-5tT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrE-8Q-Ye0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="horse.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="188" y="54" width="178" height="122"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="Ht3-o1-29w" kind="show" id="ng4-6l-2M3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vR7-ZY-MNE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="dog.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="46" width="78" height="111"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="gsa-JO-Vp5" kind="show" id="Bes-mK-9Dy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQz-Xj-n0t">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="rabbit.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="118" y="333" width="135" height="76"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="EwV-UA-xZ1" kind="show" id="GB1-Hw-tcK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KXJ-Dn-n2r"/>
+                                <exclude reference="kJA-4I-qM8"/>
+                                <exclude reference="8YW-fE-SHB"/>
+                                <exclude reference="lrE-8Q-Ye0"/>
+                                <exclude reference="vR7-ZY-MNE"/>
+                                <exclude reference="hQz-Xj-n0t"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KXJ-Dn-n2r"/>
+                                <include reference="kJA-4I-qM8"/>
+                                <include reference="8YW-fE-SHB"/>
+                                <include reference="lrE-8Q-Ye0"/>
+                                <include reference="vR7-ZY-MNE"/>
+                                <include reference="hQz-Xj-n0t"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pgg-8M-oVl"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.75" y="-191.625"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="5C3-we-BmK">
+            <objects>
+                <viewController id="gsa-JO-Vp5" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qGD-aV-Jdz"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Z3-pK-zM1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K2P-YK-oOU">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jtI-Cq-dgY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEn-qc-ywm">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bse-E5-Nm8">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="321" height="1000"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Bse-E5-Nm8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="59" width="321" height="588"/>
+                                    <mask key="subviews">
+                                        <include reference="Bse-E5-Nm8"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14i-B3-HxF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="15" width="66" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="gsa-JO-Vp5" eventType="touchUpInside" id="CXz-55-Swu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jtI-Cq-dgY"/>
+                                <exclude reference="KEn-qc-ywm"/>
+                                <exclude reference="14i-B3-HxF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jtI-Cq-dgY"/>
+                                <include reference="KEn-qc-ywm"/>
+                                <include reference="14i-B3-HxF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fu1-gp-e0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.75" y="-740.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fDd-Fg-mJA">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="7ye-Mh-q5t" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ViN-Za-hNL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jNk-EE-yCE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUo-r6-MnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254.25" y="-191.625"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="swm-GE-8Jr">
+            <objects>
+                <viewController id="fRW-Z3-JOc" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tci-D0-Uzn"/>
+                        <viewControllerLayoutGuide type="bottom" id="TwT-Tb-wWI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jut-8X-7qL">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Ew7-er-hPf">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOC-qv-Le1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bearstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="oOs-gx-Y9T">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="321" height="1000"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="oOs-gx-Y9T"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="59" width="321" height="588"/>
+                                    <mask key="subviews">
+                                        <include reference="oOs-gx-Y9T"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdW-bH-y0Q">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="15" width="66" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="fRW-Z3-JOc" eventType="touchUpInside" id="bm3-Dn-yLK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Ew7-er-hPf"/>
+                                <exclude reference="fOC-qv-Le1"/>
+                                <exclude reference="CdW-bH-y0Q"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Ew7-er-hPf"/>
+                                <include reference="fOC-qv-Le1"/>
+                                <include reference="CdW-bH-y0Q"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVc-dp-385" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562.25" y="-184.875"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="nCP-jF-P4c">
+            <objects>
+                <viewController id="EwV-UA-xZ1" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kc0-aB-mIB"/>
+                        <viewControllerLayoutGuide type="bottom" id="A68-NB-d0o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Br9-xI-OyD">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="F9T-W6-4dc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtR-eA-trp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rabbitstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tfg-gh-YsH">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="321" height="1000"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Tfg-gh-YsH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="59" width="321" height="588"/>
+                                    <mask key="subviews">
+                                        <include reference="Tfg-gh-YsH"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5I-YJ-VCb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="15" width="66" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="EwV-UA-xZ1" eventType="touchUpInside" id="s5t-x7-1Th"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="F9T-W6-4dc"/>
+                                <exclude reference="XtR-eA-trp"/>
+                                <exclude reference="g5I-YJ-VCb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="F9T-W6-4dc"/>
+                                <include reference="XtR-eA-trp"/>
+                                <include reference="g5I-YJ-VCb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vp0-bK-dKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562.25" y="370.875"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="GuM-eH-Aui">
+            <objects>
+                <viewController id="Ht3-o1-29w" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="icX-eh-PTd"/>
+                        <viewControllerLayoutGuide type="bottom" id="fVr-1x-K5d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DCH-ku-wtk">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-tk-eZh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sv4-jM-D03">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horsestar.png" translatesAutoresizingMaskIntoConstraints="NO" id="wiG-5P-K0m">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="321" height="1000"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="wiG-5P-K0m"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="59" width="321" height="588"/>
+                                    <mask key="subviews">
+                                        <include reference="wiG-5P-K0m"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX2-i1-GtK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="15" width="66" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Ht3-o1-29w" eventType="touchUpInside" id="k3l-xY-FQw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Boq-tk-eZh"/>
+                                <exclude reference="Sv4-jM-D03"/>
+                                <exclude reference="kX2-i1-GtK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Boq-tk-eZh"/>
+                                <include reference="Sv4-jM-D03"/>
+                                <include reference="kX2-i1-GtK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FxQ-2L-gfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574.25" y="-736.125"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Zav-DU-CCf">
+            <objects>
+                <viewController id="bgo-kB-wRj" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uaK-3l-IO4"/>
+                        <viewControllerLayoutGuide type="bottom" id="h5x-rq-RMS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qC7-fV-sZb">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="mqs-Sz-tg4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USf-CE-gwp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eaglestar.png" translatesAutoresizingMaskIntoConstraints="NO" id="VVe-Df-ESm">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="321" height="1000"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="VVe-Df-ESm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="59" width="321" height="588"/>
+                                    <mask key="subviews">
+                                        <include reference="VVe-Df-ESm"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIf-rB-53S">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="15" width="66" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="bgo-kB-wRj" eventType="touchUpInside" id="w83-wn-Gxk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mqs-Sz-tg4"/>
+                                <exclude reference="USf-CE-gwp"/>
+                                <exclude reference="QIf-rB-53S"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mqs-Sz-tg4"/>
+                                <include reference="USf-CE-gwp"/>
+                                <include reference="QIf-rB-53S"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBh-B5-9Ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.75" y="370.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aurora.jpeg" width="4016" height="4016"/>
+        <image name="bear.png" width="280" height="237"/>
+        <image name="bearstar.png" width="375" height="1000"/>
+        <image name="constellation.jpeg" width="5616" height="3744"/>
+        <image name="dog.png" width="280" height="480"/>
+        <image name="dogstar.png" width="375" height="1000"/>
+        <image name="eagle.png" width="280" height="211"/>
+        <image name="eaglestar.png" width="375" height="1000"/>
+        <image name="horse.png" width="280" height="280"/>
+        <image name="horsestar.png" width="375" height="1000"/>
+        <image name="rabbit.png" width="280" height="185"/>
+        <image name="rabbitstar.png" width="375" height="1000"/>
+    </resources>
+</document>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kfK-Q7-toa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Departure" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTO-ds-eKd">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="88" width="98" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dKL-SV-rgM"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Arrival" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yDa-JQ-3ts">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="233" y="88" width="98" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KcA-Lf-MiM"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-96-Nto">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="92" width="28" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Booking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc8-mh-Rig">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="75" y="20" width="224" height="35"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-xw-6fy">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="143" width="170" height="33"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round Trip :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qh-Ue-4E9">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="190" width="170" height="33"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" alpha="0.5" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNp-6W-cke">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.81148494630000001" blue="0.2112241993" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Select Date"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="200" y="141" width="131" height="37"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showDatePickerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dl-od-DZV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE8-tL-wOc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.81148494630000001" blue="0.2112241993" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Select Date"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="200" y="240" width="131" height="37"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showDatePickerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0PR-oo-Jf5"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qjv-3D-djk">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <color key="onTintColor" red="0.3979617325" green="0.55519319410000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="241" y="192" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showReturnDateAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="2ci-WG-dx1"/>
+                                </connections>
+                            </switch>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="E32-gj-nwO">
+                                <rect key="frame" x="-160" y="-108" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="478800772.31687301">
+                                    <!--2016-03-04 16:12:52 +0000-->
+                                </date>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                </variation>
+                                <connections>
+                                    <action selector="selectDateAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="yUp-qr-XTg"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gam-Z0-cYm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.4498529383" green="0.73437017790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Search"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="113" y="317" width="157" height="46"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-V7-bG9">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="244" width="170" height="33"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kfK-Q7-toa"/>
+                                <exclude reference="uTO-ds-eKd"/>
+                                <exclude reference="yDa-JQ-3ts"/>
+                                <exclude reference="gsa-96-Nto"/>
+                                <exclude reference="Xc8-mh-Rig"/>
+                                <exclude reference="g6i-xw-6fy"/>
+                                <exclude reference="2qh-Ue-4E9"/>
+                                <exclude reference="qNp-6W-cke"/>
+                                <exclude reference="cE8-tL-wOc"/>
+                                <exclude reference="Qjv-3D-djk"/>
+                                <exclude reference="E32-gj-nwO"/>
+                                <exclude reference="gam-Z0-cYm"/>
+                                <exclude reference="BBT-V7-bG9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="kfK-Q7-toa"/>
+                                <include reference="uTO-ds-eKd"/>
+                                <include reference="yDa-JQ-3ts"/>
+                                <include reference="gsa-96-Nto"/>
+                                <include reference="Xc8-mh-Rig"/>
+                                <include reference="g6i-xw-6fy"/>
+                                <include reference="2qh-Ue-4E9"/>
+                                <include reference="qNp-6W-cke"/>
+                                <include reference="cE8-tL-wOc"/>
+                                <include reference="Qjv-3D-djk"/>
+                                <include reference="E32-gj-nwO"/>
+                                <include reference="gam-Z0-cYm"/>
+                                <include reference="BBT-V7-bG9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="departureDateButton" destination="qNp-6W-cke" id="6Ic-SD-mdb"/>
+                        <outlet property="returnDateButton" destination="cE8-tL-wOc" id="Mm6-yf-Pq2"/>
+                        <outlet property="returnDateLabel" destination="BBT-V7-bG9" id="hqi-HZ-dbu"/>
+                        <outlet property="selectDatePicker" destination="E32-gj-nwO" id="MJY-A0-swh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387.75" y="345.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpeg" width="3300" height="2200"/>
+    </resources>
+</document>
