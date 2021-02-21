@@ -1,14 +1,15 @@
 //
 //  ViewController.h
-//  VisualAddressBook
+//  AppLifeCycle
 //
-//  Created by ChoiJinYoung on 2/29/16.
+//  Created by ChoiJinYoung on 3/3/16.
 //  Copyright © 2016 appstamp. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class BookManager;
 @interface ViewController : UIViewController
 
+
 @end
+
